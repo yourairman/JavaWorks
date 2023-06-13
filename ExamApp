@@ -1,0 +1,20 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    java.util.Scanner kb=new java.util.Scanner(System.in);	    
+	    int physics,chemistry,turkish,history,music;
+	    System.out.println("Please, enter your physics exam note");
+	    physics=kb.nextInt();
+        System.out.println("Please, enter your chemistry exam note");
+	    chemistry=kb.nextInt();
+	    System.out.println("Please, enter your turkish exam note");
+	    turkish=kb.nextInt();
+	    System.out.println("Please, enter your history exam note");
+	    history=kb.nextInt();
+	    System.out.println("Please, enter your music exam notes");
+	    music=kb.nextInt();
+	    double avg=((physics+chemistry+turkish+history+music)/5);
+	    System.out.println("Avarage: "+avg);
+        System.out.println(avg > 60 ? "Congrats passed your exam" : "Sorry you're not success");
+	}
+}
