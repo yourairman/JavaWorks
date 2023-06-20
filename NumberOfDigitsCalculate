@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+		
+        java.util.Scanner kb = new java.util.Scanner(System.in);
+
+        System.out.print("Bir sayı girin: ");
+        int sayi = kb.nextInt();
+
+        int basamakSayisi = hesaplaBasamakSayisi(sayi);
+        System.out.println("Girilen sayının basamak sayısı: " + basamakSayisi);
+    }
+
+    public static int hesaplaBasamakSayisi(int sayi) {
+        int taban = 10; // Tabanı değiştirmek isterseniz burayı güncelleyebilirsiniz.
+        double logaritma = Math.log10(sayi) / Math.log10(taban);
+        int basamakSayisi = (int) Math.floor(logaritma) + 1;
+
+        return basamakSayisi;
+    }
+}
+	}
