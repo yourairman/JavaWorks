@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+        java.util.Scanner kb=new java.util.Scanner(System.in);
+        int a,b,c,u;
+        double Alan;
+        System.out.println("Lutfen a uzunlugunu giriniz");
+        a=kb.nextInt();
+        System.out.println("Lutfen b uzunlugunu giriniz");
+        b=kb.nextInt();
+        System.out.println("Lutfen c uzunlugunu giriniz");
+        c=kb.nextInt();
+        
+        u=(a+b+c)/2;
+        int Cevre=2*u;
+        Alan=Math.sqrt(u*(u-a)*(u-b)*(u-c));
+        System.out.println("Cevre= "+Cevre);
+        System.out.println("Alan= "+Alan);
+    }
+}
+	
