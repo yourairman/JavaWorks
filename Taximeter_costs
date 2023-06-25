@@ -1,0 +1,25 @@
+/*Write a program that prints the taximeter amount to the screen according to the distance traveled (KM).
+
+Taximeter costs 2.20 $ per km.
+The minimum amount to be paid is 20 $. 20 $ will be charged for the fees below 20 $.
+Taximeter opening fee is 10 $.
+*/
+
+public class Main
+{
+	public static void main(String[] args) {
+	    java.util.Scanner kb=new java.util.Scanner(System.in);
+		double measure, result;
+		result=0;
+		System.out.println("Please enter the measure[km]");
+		measure=kb.nextInt();
+		result=(2.20)*(measure);
+		if (result<20)
+		    result=20;
+		else
+		    result=10+result;
+		    
+		System.out.println("Price= "+ result +" $");
+		}
+	
+}
