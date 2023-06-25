@@ -4,13 +4,17 @@ public class Main
 {
 	public static void main(String[] args) {
 	    java.util.Scanner kb=new java.util.Scanner(System.in);
-		double area, primeter,radius,pi;
+		double area, primeter,radius,pi,alfa, alfa_area;
 		pi=3.14;
 		System.out.println("Please enter the radius[m]");
 		radius=kb.nextDouble();
+		System.out.println("Please enter the alfa degree(α)");
+		alfa=kb.nextDouble();
 	    area=pi*radius*radius;
 	    primeter=2*pi*radius;
-		System.out.println("Area= "+ area +" Primeter="+primeter);
+	    alfa_area=area*alfa/360;
+
+		System.out.println("Area= "+ area +" Primeter="+primeter+ " Alfa Area="+ alfa_area);
 		}
 	
 }
