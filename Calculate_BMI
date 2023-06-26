@@ -1,0 +1,26 @@
+/******************************************************************************
+Calculate (BMI) - Body Mass Index 
+Weight (kg) / Height(cm) * Height(cm)
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+	    java.util.Scanner kb=new java.util.Scanner(System.in);
+	    double weight, height,bmi;
+	    System.out.print("Please enter your weight: ");
+	    weight=kb.nextDouble();
+	    System.out.print("Please enter your height: [cm]");
+	    height=kb.nextDouble();
+	    bmi=(weight*10000)/(height*height);
+	    
+	    if(bmi<18.5)
+		    System.out.println("BMI: "+bmi +" Underweight");
+		else if(bmi>18.5&& bmi<24.9)
+		    System.out.println("BMI: "+bmi +" Healthy Weight");
+		else if(25.0<bmi&& bmi<29.9)
+		    System.out.println("BMI: "+bmi +" Overweight");
+		else
+		    System.out.println("BMI: "+bmi +" Obesity");
+	}
+}
