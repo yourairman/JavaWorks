@@ -1,0 +1,41 @@
+/*
+Write a user login with switch-case. If password is wrong please ask to user "Do you want change the password?" If, he/she says; Yes; change the password.
+**/
+public class Main
+{
+public static void main(String[] args) {
+   java.util.Scanner kb=new java.util.Scanner(System.in);
+   String userName;
+   int password;
+   System.out.print("Please, enter username: ");
+   userName=kb.nextLine();
+   System.out.print("Please, enter password: ");
+   password=kb.nextInt();
+   
+   if ((userName.equals("kadirgur")&&(password==12345)))
+           System.out.print("Login success! ");
+    else{
+        System.out.print("Error password or username. Do you want reset your password? ");
+        System.out.print("1-Yes, 2-No ");
+        int resetpass=kb.nextInt();
+        switch(resetpass){
+            case 1:
+                System.out.print("Please write your new password ");
+                int newPass=kb.nextInt();
+                if (newPass==password){
+                    System.out.print("Your password cannot be the same old password ");
+                } 
+                else{
+                    password=newPass;
+                    System.out.print("Your password has been changed! ");
+                }
+                break;
+            case 2:
+                System.out.print("Password couldn't changed! Bye! ");
+            default:
+                System.out.print("Error! ");
+        }
+            
+    }
+}
+}
