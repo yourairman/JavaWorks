@@ -1,1 +1,35 @@
+/***
 This calculator was created with switch-case
+**/
+public class Main
+{
+public static void main(String[] args) {
+   java.util.Scanner kb=new java.util.Scanner(System.in);
+   int Number1,Number2, Operate;
+   System.out.print("Please, enter first number: ");
+   Number1=kb.nextInt();
+   System.out.print("Please, enter second number: ");
+   Number2=kb.nextInt();
+   System.out.print("1-Sum\n 2-Distinct \n 3-Multiple \n 4-Divide ");
+   Operate=kb.nextInt();
+
+        switch(Operate){
+            case 1:
+            System.out.println(Number1+Number2);
+            break;
+            case 2:
+            System.out.println(Number1-Number2);
+            break;
+            case 3:
+            System.out.println(Number1*Number2);
+            break;
+            case 4:
+               double res= ((Number2==0)?0:(Number1/Number2));
+               break;
+            
+            default:
+            System.out.println("Hatali giris yaptiniz");
+            }
+        }
+
+}
