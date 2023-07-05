@@ -1,0 +1,35 @@
+/******************************************************************************
+If the course grades entered are not between 0 or 100, they should not be included in the average.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+   Scanner kb=new Scanner(System.in);
+   boolean userlogin,errorLogin;
+   int math,physic, chem,dynamic,power,avg;
+   int Lesson[]={math,physic, chem,dynamic,power}
+    System.out.print("Please enter math exam point: ");
+    math=kb.nextInt();
+    System.out.print("Please enter physic exam point: ");
+    physic=kb.nextInt();
+    System.out.print("Please enter chemistry exam point: ");
+    chem=kb.nextInt();
+    System.out.print("Please enter dynamic exam point: ");
+    dynamic=kb.nextInt();
+    System.out.print("Please enter power exam point: ");
+    power=kb.nextInt();
+    
+    avg=math+physic+chem+dynamic+power;
+    for (i=0;<Lesson.size ;i++ ) 
+    ...
+    ...
+    ...
+
+
+   }
+
+
+}
+}
