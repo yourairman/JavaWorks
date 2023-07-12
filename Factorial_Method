@@ -1,0 +1,27 @@
+/****
+Write a method for calculate the factorial
+This is a coderbyte challange: https://www.coderbyte.com/editor/First%20Factorial:Java
+****/
+import java.util.*; 
+import java.io.*;
+import java.util.Scanner;
+
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    System.out.print("Please write num: ");
+        int num = s.nextInt();
+        System.out.print(FirstFactorial(num)); 
+    }
+    
+    public static int FirstFactorial(int num) {
+        int result = 1;
+        for (int i = num; i > 0; i--) {
+            result *= i;
+        }
+        return result;
+    }
+}
+
