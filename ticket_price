@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    
+public static void main(String[] args) {
+
+    Scanner kb=new Scanner(System.in);
+    System.out.print("Please enter your distance (km): ");
+     int distance=kb.nextInt();
+    
+    System.out.print("Please enter your age ");
+     int age=kb.nextInt();
+    
+    System.out.print("Please enter your trip type (1 => One Way , 2 => Round Trip ): ");
+     int trip_type=kb.nextInt();
+     double price;
+    
+    switch(trip_type)
+    {
+    case 1:
+        if(0<yas&&yas<12)
+            age_child();
+        else if(12<yas&&yas<24)
+            age_young();
+        else
+            ageold();
+        break;
+        default:    System.out.print("Wrong value ");
+
+       
+    case 2:
+        if(0<yas&&yas<12)
+            price=8/10*2*(age_child());
+        else if(12<yas&&yas<24)
+            price=8/10*2*age_young()*8/10;
+        else
+            price=8/10*2*ageold()*8/10;
+        break;    
+        default:    System.out.print("Wrong value ");
+    } 
+}
+        public void age_child()
+        {
+            price=(5/10*(1/10)*distance);
+        }
+        public void age_young()
+        {
+            price=(9/10*(1/10)*distance);
+        }
+        public void ageold()
+        {
+            price=(7/10)*(1/10)*distance;
+        }
+
