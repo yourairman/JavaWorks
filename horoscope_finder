@@ -1,8 +1,3 @@
-/*This app written by java. 
-
-Firstly application takes birth day and month and gives result as horoscope
-*/
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -144,6 +139,8 @@ public class Main {
     }
     // code block
     break;
+    default:
+                System.out.println("Geçersiz değer");
 }
     }
     
