@@ -1,0 +1,88 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner kg=new Scanner(System.in);
+        
+        int kalan;
+        System.out.print("Please write a year:");
+        int year=kg.nextInt();
+        
+        int bolum=year/12;
+        
+        int carpim=bolum*12;
+        
+        
+		if(carpim==year){
+            switch(kalan)
+            case 0:
+                System.out.print("Doğum Tarihi %12 = 0 ➜ Maymun")
+            break:
+    } 
+        else{
+            kalan=year-carpim;
+            
+            switch(kalan)
+                case 1:
+                    System.out.print("Doğum Tarihi %12 = 1 ➜ Horoz")
+                break:
+                
+                case 2:
+                    System.out.print("Doğum Tarihi %12 = 2 ➜ Köpek")
+                break:
+                
+                case 3:
+                    System.out.print("Doğum Tarihi %12 = 3 ➜ Domuz")
+                break:
+                
+                case 4:
+                    System.out.print("Doğum Tarihi %12 = 4 ➜ Fare")
+                break:
+                
+                case 5:
+                    System.out.print("Doğum Tarihi %12 = 5 ➜ Öküz")
+                break:
+                
+                case 6:
+                    System.out.print("Doğum Tarihi %12 = 6 ➜ Kaplan")
+                break:
+                
+                case 7:
+                    System.out.print("Doğum Tarihi %12 = 7 ➜ Tavşan")
+                break:
+                
+                case 8:
+                    System.out.print("Doğum Tarihi %12 = 8 ➜ Ejderha")
+                break:
+                
+                
+                case 9:
+                    System.out.print("Doğum Tarihi %12 = 9 ➜ Yılan")
+                break:
+                
+                
+                case 10:
+                    System.out.print("Doğum Tarihi %12 = 10 ➜ At")
+                break:
+                
+                
+                case 11:
+                    System.out.print("Doğum Tarihi %12 = 1 ➜ Koyun")
+                break:
+                
+                
+                case 12:
+                    System.out.print("Doğum Tarihi %12 = 1 ➜ Horoz")
+                break:
+    }
+		
+	}
+}
