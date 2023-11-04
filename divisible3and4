@@ -1,0 +1,27 @@
+/*If a number divisible without remainder 3 and 4. The app shows the arithmetic avarage   */
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kb=new Scanner(System.in);
+	    
+	    System.out.print("Lütfen Sayi giriniz: ");
+	    int sayi=kb.nextInt();
+	    int n=0;
+	    int toplam=0;
+	    for (int i=0; i<=sayi; i++)
+	    {
+	        if((i%3==0)&&(i%4==0))
+	        {
+	           toplam=toplam+i;
+	           n=n+1; 
+	        }
+	           
+	    }
+	    System.out.print("Ortalama: "+(toplam/(n-1)));
+
+		
+	}
+}
