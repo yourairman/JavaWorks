@@ -1,0 +1,19 @@
+/*We are writing a program that prints the powers of 4 and 5 up to the number entered with Java loops.  */
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kb=new Scanner(System.in);
+	    System.out.print("Lütfen bir sayi giriniz: ");
+	    int sayi=kb.nextInt();
+	    
+	    for (int i=0; ((Math.pow(4,i))<=sayi)&&((Math.pow(5,i))<=sayi); i++)
+	    {
+            System.out.println((Math.pow(4,i)));
+            System.out.println((Math.pow(5,i)));
+	    }
+	}
+}
