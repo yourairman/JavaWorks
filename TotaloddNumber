@@ -1,0 +1,30 @@
+/*The program receives a number from the user
+and continues to receive numbers from the user until the user enters a negative number. 
+If the number is negative, the program terminates and the result of the odd numbers entered by the user
+is printed on the screen.*/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kb=new Scanner(System.in);
+	    int sayi;
+	    int toplam=0;
+	    do
+	    {
+	        
+	        System.out.print("Lütfen Sayi giriniz: ");
+	        sayi=kb.nextInt();
+	    
+	        if(sayi%2!=0)
+	        {
+	           toplam+=sayi;
+	        }
+	    }while(sayi>=0);
+	    
+	    System.out.print("Toplam: "+(toplam));
+
+		
+	}
+}
