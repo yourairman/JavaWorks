@@ -1,0 +1,27 @@
+/*Make a program that calculates the exponent with the values entered by the user with Java using "For Loop". */
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kb=new Scanner(System.in);
+	    boolean islem;
+	    for (islem=false; islem=true; )
+	    {
+	        System.out.print("Lütfen lütfen bir sayi giriniz: ");
+	        int n=kb.nextInt();
+	        System.out.print("Lütfen sayinin üssünü giriniz: ");
+	        int r=kb.nextInt();
+	        
+	        double sonuc=Math.pow(n,r);
+	        System.out.println("Sonuç: "+sonuc);
+	    }
+	    
+	    islem=false;
+	    
+	    
+	    
+	    
+	}
+}
